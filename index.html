@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC News - Home (Semantic HTML Recreation)</title>
+    <meta name="description" content="Structural recreation of the BBC News homepage using semantic HTML.">
+</head>
+
+<body>
+
+    <a href="#main-content">Skip to content</a>
+
+    <!-- ========== SITE HEADER ========== -->
+    <header>
+        <a href="/">
+            <img src="assets/logo.png" alt="BBC News logo" width="120" height="32">
+        </a>
+
+        <form action="/search" method="get" role="search">
+            <label for="site-search">Search news</label>
+            <input type="search" id="site-search" name="q" placeholder="Search news, topics and more">
+            <button type="submit">Search</button>
+        </form>
+
+        <p>
+            <a href="/signin">Sign in</a>
+        </p>
+
+        <!-- Primary navigation -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/news">News</a></li>
+                <li><a href="/sport">Sport</a></li>
+                <li><a href="/business">Business</a></li>
+                <li><a href="/innovation">Innovation</a></li>
+                <li><a href="/culture">Culture</a></li>
+                <li><a href="/travel">Travel</a></li>
+                <li><a href="/earth">Earth</a></li>
+                <li><a href="/video">Video</a></li>
+                <li><a href="/live">Live</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ========== MAIN CONTENT ========== -->
+    <main id="main-content">
+
+        <h1>News</h1>
+
+        <!-- Top story / hero -->
+        <section aria-labelledby="top-stories-heading">
+            <h2 id="top-stories-heading">Top stories</h2>
+
+            <article>
+                <a href="/news/article-1">
+                    <img src="assets/top-story.png" alt="Leaders gathered at a summit table" width="800" height="450">
+                </a>
+                <h3><a href="/news/article-1">World leaders reach landmark agreement at global summit</a></h3>
+                <p>Negotiators say the deal could reshape international cooperation over the next decade.</p>
+                <footer>
+                    <p>
+                        <time datetime="2026-10-14T08:30:00Z">2 hrs ago</time> |
+                        <a href="/news/world">World</a>
+                    </p>
+                </footer>
+            </article>
+
+            <article>
+                <h3><a href="/news/article-2">Central bank announces surprise interest rate decision</a></h3>
+                <p>Markets react as policymakers cite slowing inflation.</p>
+                <p><time datetime="2026-10-14T07:15:00Z">3 hrs ago</time> | <a href="/news/business">Business</a></p>
+            </article>
+
+            <article>
+                <h3><a href="/news/article-3">Storm warnings issued across coastal regions</a></h3>
+                <p>Residents are urged to follow local guidance as conditions worsen.</p>
+                <p><time datetime="2026-10-14T06:45:00Z">4 hrs ago</time> | <a href="/news/weather">Weather</a></p>
+            </article>
+        </section>
+
+        <!-- Live coverage -->
+        <section aria-labelledby="live-heading">
+            <h2 id="live-heading">Live</h2>
+            <article>
+                <h3><a href="/live/event-1">Live: Updates as election results come in</a></h3>
+                <ul>
+                    <li><time datetime="2026-10-14T09:55">09:55</time> First results announced from northern districts
+                    </li>
+                    <li><time datetime="2026-10-14T09:40">09:40</time> Turnout reported higher than expected</li>
+                    <li><time datetime="2026-10-14T09:10">09:10</time> Polls close in remaining regions</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Video -->
+        <section aria-labelledby="video-heading">
+            <h2 id="video-heading">Watch</h2>
+            <figure>
+                <video controls width="640" poster="assets/video-poster.jpg">
+                    <source src="assets/news-clip.mp4" type="video/mp4">
+                    <track kind="captions" src="assets/news-clip.vtt" srclang="en" label="English">
+                    Your browser does not support the video element.
+                </video>
+                <figcaption>Video: Daily news briefing in 60 seconds</figcaption>
+            </figure>
+        </section>
+
+        <!-- Category sections -->
+        <section aria-labelledby="sport-heading">
+            <h2 id="sport-heading"><a href="/sport">Sport</a></h2>
+            <article>
+                <h3><a href="/sport/article-1">Late goal secures dramatic victory in cup tie</a></h3>
+                <p>The home side struck in stoppage time to progress to the next round.</p>
+            </article>
+            <article>
+                <h3><a href="/sport/article-2">Champion targets record after qualifying win</a></h3>
+                <p>A confident performance puts the favourite in pole position.</p>
+            </article>
+        </section>
+
+        <section aria-labelledby="business-heading">
+            <h2 id="business-heading"><a href="/business">Business</a></h2>
+            <article>
+                <h3><a href="/business/article-1">Tech firm unveils record quarterly earnings</a></h3>
+                <p>Strong demand for cloud services drives growth.</p>
+            </article>
+            <article>
+                <h3><a href="/business/article-2">High street retailers brace for festive season</a></h3>
+                <p>Shoppers expected to spend cautiously this year.</p>
+            </article>
+        </section>
+
+        <section aria-labelledby="culture-heading">
+            <h2 id="culture-heading"><a href="/culture">Culture</a></h2>
+            <article>
+                <img src="assets/culture.png" alt="Film festival red carpet" width="400" height="225">
+                <h3><a href="/culture/article-1">Festival opens with a celebrated new drama</a></h3>
+                <p>Critics praise the film's performances and direction.</p>
+            </article>
+        </section>
+
+        <!-- Sidebar -->
+        <aside aria-labelledby="most-read-heading">
+            <section>
+                <h2 id="most-read-heading">Most read</h2>
+                <ol>
+                    <li><a href="/news/most-read-1">Scientists announce major climate finding</a></li>
+                    <li><a href="/news/most-read-2">Airline expands routes across three continents</a></li>
+                    <li><a href="/news/most-read-3">Why sleep matters more than you think</a></li>
+                    <li><a href="/news/most-read-4">City unveils plan for new transport network</a></li>
+                    <li><a href="/news/most-read-5">The rise of electric vehicles explained</a></li>
+                </ol>
+            </section>
+
+            <section aria-labelledby="newsletter-heading">
+                <h2 id="newsletter-heading">Get the news in your inbox</h2>
+                <form action="/subscribe" method="post">
+                    <fieldset>
+                        <legend>Newsletter signup</legend>
+
+                        <p>
+                            <label for="email">Email address</label>
+                            <input type="email" id="email" name="email" required>
+                        </p>
+
+                        <p>
+                            <label for="frequency">Frequency</label>
+                            <select id="frequency" name="frequency">
+                                <option value="daily">Daily</option>
+                                <option value="weekly">Weekly</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the terms of use</label>
+                        </p>
+
+                        <button type="submit">Subscribe</button>
+                    </fieldset>
+                </form>
+            </section>
+        </aside>
+
+    </main>
+
+    <!-- ========== SITE FOOTER ========== -->
+    <footer>
+        <nav aria-label="Footer navigation">
+            <h2>More from BBC</h2>
+            <ul>
+                <li><a href="/terms">Terms of Use</a></li>
+                <li><a href="/about">About the BBC</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <li><a href="/cookies">Cookies</a></li>
+                <li><a href="/accessibility">Accessibility Help</a></li>
+                <li><a href="/contact">Contact the BBC</a></li>
+            </ul>
+        </nav>
+
+        <p><small>&copy; 2026 BBC. The BBC is not responsible for the content of external sites.</small></p>
+    </footer>
+</body>
+
+</html>
