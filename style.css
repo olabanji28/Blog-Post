@@ -1,0 +1,143 @@
+/* ===== 1. GLOBAL RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== 2. ELEMENT SELECTORS ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  color: #222222;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1 {
+  color: #bb1919;
+  font-size: 2.2rem;
+  margin: 20px 0;
+}
+
+h2 {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 10px 15px;
+  margin: 0 0 15px 0;
+}
+
+h2 a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+h3 {
+  margin: 0 0 8px 0;
+}
+
+a {
+  color: #bb1919;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== 3. CLASS SELECTORS ===== */
+.site-header {
+  background-color: #bb1919;
+  color: #ffffff;
+  padding: 20px;
+  border-bottom: 5px solid #222222;
+}
+
+.site-header a {
+  color: #ffffff;
+}
+
+.main-nav {
+  background-color: #ffffff;
+  border: 2px solid #222222;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.main-nav ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.main-nav a {
+  color: #bb1919;
+  font-weight: bold;
+}
+
+.section {
+  background-color: #ffffff;
+  border: 3px solid #222222;
+  width: 100%;
+  padding: 20px;
+  margin: 0 0 30px 0;
+}
+
+.card {
+  background-color: #fafafa;
+  color: #222222;
+  border: 2px solid #bb1919;
+  width: 100%;
+  max-width: 600px;
+  padding: 15px;
+  margin: 0 0 20px 0;
+}
+
+.sidebar {
+  background-color: #fff3cd;
+  border: 4px dashed #bb1919;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  margin: 0 0 30px 0;
+}
+
+.btn {
+  background-color: #bb1919;
+  color: #ffffff;
+  border: 2px solid #222222;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.site-footer {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 20px;
+  margin-top: 30px;
+  border-top: 5px solid #bb1919;
+}
+
+.site-footer a {
+  color: #ffffff;
+}
+
+/* ===== 4. ID SELECTORS ===== */
+#main-content {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e8e8e8;
+  border: 2px solid #999999;
+}
+
+#page-title {
+  border-left: 10px solid #bb1919;
+  padding-left: 15px;
+}
+
+#hero-story {
+  background-color: #ffffff;
+  border: 4px solid #bb1919;
+  padding: 20px;
+}
